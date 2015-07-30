@@ -7,4 +7,9 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
 
+  post '/subject' do
+    subject_choice = params["subject"]
+    erb #put method hame here
+  end
+  
 end
