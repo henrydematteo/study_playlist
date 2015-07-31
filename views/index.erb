@@ -3,18 +3,19 @@
  <head>
   <meta charset="UTF-8">
   <title>Tune Out</title>
-  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
  </head>
- <body>
+   <body>
    <h1>Welcome to Tune Out.</h1>
    <h2>What subject are you studying now?</h2>
-  <div>
-   <form action="">
-<input type="radio" name="subject" value="history">history<br>
-<input type="radio" name="subject" value="math">math<br>
-<input type="radio" name="subject" value="science">science<br>
-<input type="radio" name="subject" value="English">English 
-</form>
+  <div=form>
+    <form method="POST" action="/subject">
+      <input type="radio" name="subject" value="History">History<br>
+      <input type="radio" name="subject" value="Math">Math<br>
+      <input type="radio" name="subject" value="Science">Science<br>
+      <input type="radio" name="subject" value="English">English<br>
+      <input type="submit" value="Get Playlist">
+    </form>
    </div>
  </body>
 </html>

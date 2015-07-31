@@ -1,5 +1,6 @@
 require 'bundler'
 Bundler.require
+require_relative 'models/model.rb'
 
 class ApplicationController < Sinatra::Base
 
@@ -8,8 +9,13 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/subject' do
-    subject_choice = params["subject"]
-    erb #put method hame here
+    choice = params["subject"]
+    hash = choose_subject(choice)
+    @description = hash[:description]
+    @picture = hash[:picture]
+    @title = hash[:title]
+    @playlist = hash[:playlist]
+    erb :subject
   end
   
 end

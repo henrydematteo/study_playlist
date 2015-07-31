@@ -3,17 +3,15 @@
  <head>
   <meta charset="UTF-8">
   <title>Subject Playlist</title>
-  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  <link rel="stylesheet" href="style.css" type="text/css">
  </head>
  <body>
-   <h1>History</h1>
-<!--    <a href="http://8tracks.com/hulloemily/afternoon-sunlight">Your History Playlist</a> -->
-   <iframe src="http://8tracks.com/mixes/5900222/player_v3_universal" width="300" height="250" style="border: 0px none;"></iframe>
-<p class="_8t_embed_p" style="font-size: 11px; line-height: 12px;"><a href="http://8tracks.com/hulloemily/afternoon-sunlight?utm_medium=trax_embed">Afternoon Sunlight</a> from <a href="http://8tracks.com/hulloemily?utm_medium=trax_embed">hulloemily</a> on <a href="http://8tracks.com?utm_medium=trax_embed">8tracks Radio</a>.</p>
+   <h1><%= @title %></h1>
+   <!--this embeds a playlist-->
+  <%= @playlist %>
 
-   <img src="http://history.appstate.edu/sites/history.appstate.edu/files/images/Map2.jpg">
+   <img src="<%= @picture%>"> <!--calling the variable we set for the micture in the method and the app controller-->
    <br>
-   <p>Description</p>
-<!--    <a href="http://8tracks.com/hulloemily">Source</a> -->
+   <%= @description %>
  </body>
 </html>
